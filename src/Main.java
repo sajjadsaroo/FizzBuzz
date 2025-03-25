@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        int number = handleUserInput();
+        fizzBuzz(number);
     }
 
     private static void fizzBuzz(int limit) {
