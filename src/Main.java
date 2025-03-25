@@ -5,6 +5,8 @@ public class Main {
 
     }
 
+
+
     private static int handleUserInput() {
         Scanner scanner = new Scanner(System.in);
         int number;
@@ -23,6 +25,15 @@ public class Main {
         return number;
     }
 
+    private static String getFizzBuzzValue(int num) {
+        String result = "";
+        if (num % 3 == 0) {
+            result = result.concat("Fizz");
+        }
+        if (num % 5 == 0) {
+            result = result.concat("Buzz");
+        }
 
-
+        return result.isEmpty() ? String.valueOf(num) : result;
+    }
 }
