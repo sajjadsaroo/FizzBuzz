@@ -5,7 +5,11 @@ public class Main {
 
     }
 
-
+    private static void fizzBuzz(int limit) {
+        for (int i = 1; i <= limit; i++) {
+            System.out.println(getFizzBuzzValue(i));
+        }
+    }
 
     private static int handleUserInput() {
         Scanner scanner = new Scanner(System.in);
